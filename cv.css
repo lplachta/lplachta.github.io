@@ -1,0 +1,21 @@
+body {
+    background-color: lightgrey;
+    font-size: 15px;
+    font-family: verdana;
+}
+#cvheading {
+  font-size: 18px;
+}
+h2 {
+  font-size: 24px;
+}
+
+#pinfo {
+    background-color: lightblue;
+}
+#winfo {
+    background-color: lightgreen;
+}
+#einfo {
+    background-color: beige;
+}
