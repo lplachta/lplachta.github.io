@@ -13,10 +13,10 @@ ul li {
   list-style-type: none;
 }
 nav {
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 nav li a {
-	background: lightblue;
+	background: lightgrey;
 	border: 1px solid #454545;
 	color: black;
 	display: block;
@@ -30,7 +30,7 @@ nav li a {
 	transition: background 0.5s ease;
 }
 nav li a:hover, nav li.active a {
-	background: #DADADA;
+	background: lightblue;
 	color: #454545;
 }
 #cvheading {
@@ -48,14 +48,13 @@ nav li a:hover, nav li.active a {
   top: 80px;
 }
 #cinfo {
-    background-color: lightblue;
     width: 50%;
     font-size: 15px;
     font-family: verdana;
     text-align: center;
     margin-bottom: 50px;
     position: relative;
-    top: 400px;
+    top: 80px;
 }
 #am {
     width: 45%;
@@ -63,19 +62,30 @@ nav li a:hover, nav li.active a {
     text-align: justify;
     float: right;
     position: relative;
-    top: -440px;
+    top: -380px;
     right: 30px;
 }
 #winfo {
-    background-color: lightblue;
     width: 50%;
     font-size: 15px;
     font-family: verdana;
     text-align: center;
+    position: relative;
+    top: 140px;
 }
 #einfo {
-    background-color: lightblue;
     font-size: 15px;
     font-family: verdana;
     text-align: center;
+    width: 48%;
+    position: relative;
+    top: -470px;
+    right: -730px;
+}
+#externallinks {
+  position: relative;
+  top: -300px;
+  text-align: center;
+  font-family: verdana;
+  font-size: 15px;
 }
