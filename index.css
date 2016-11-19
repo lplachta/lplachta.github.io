@@ -1,7 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
     background-color: lightgrey;
+    text-align: justify;
+    font-size: 22px;
 }
-body h1 {
+
+header {
+	text-align: center;
+}
+
+/*NAV Start*/
+nav {
+  width: 100%;
+  margin: 1% auto;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+nav li a {
+	background: lightgrey;
+	border: 1px solid #454545;
+	color: black;
+	display: block;
+	float: left;
+	font-size: 120%;
+	font-weight: 600;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	width: 16.65%;
+	transition: background 0.5s ease;
+}
+nav li a:hover, nav li.active a {
+	background: lightblue;
+	color: #454545;
+}
+
+/*NAV End*/
+
+/*Heading Start*/
+
+.heading {
+  width: 100%;
+  position: relative;
+}
+
+.heading h1 {
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+.heading img {
+  height: 300px;
+  width: 220px;
+  left: 5%;
+  position: relative;
+  border: 3px solid #DCDCDC;
+  border-radius: 2%;
+}
+
+.heading ul {
+  right: 5%;
+  position: absolute;
+  top: 40%;
+  list-style: none;
+}
+/*Heading End*/
+/*About start*/
+.about {
+  width: 100%;
+  text-align: justify;
+  position: relative;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.work {
+  width: 100%;
+  position: relative;
+}
+.work img#spartaimage {
+  width: 25%;
+  height: auto;
+  left: 5%;
+  position: relative;
+}
+.work img#cineworldimage {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  left: 5%;
+  top: 100%;
+  padding-top: 2%;
+}
+.work img#waitroseimage {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  left: 5%;
+  top: 230%;
+}
+.work ul#sparta {
+  right: 5%;
+  position: absolute;
+  top: 40%;
+  list-style: none;
+}
+.work ul#cineworld {
+  right: 21.5%;
+  position: absolute;
+  top: 105%;
+  list-style: none;
+}
+.work ul#cineworld li ol li {
+  position: relative;
+  left: 15%;
+}
+.work ul#waitrose {
+  right: 10%;
+  position: absolute;
+  top: 260%;
+  list-style: none;
+}
+
+/*Media Queries Start*/
+
+/*Reduced Size*/
+@media only screen and (max-width: 900px) {
+  .heading ul {
+    position: relative;
+    left: 5%;
+  }
+  .work ul#sparta {
+    position: relative;
+    left: 5%;
+  }
+  .work ul#cineworld {
+    position: absolute;
+    top: 135%;
+    left: 5%;
+  }
+  .work ul#waitrose {
+    position: absolute;
+    top: 250%;
+    left: 5%;
+  }
+}
+
+/*iPad*/
+@media only screen and (max-width: 780px) {
+
+  nav {
+		margin: 2% auto;
+	}
+	nav li a {
+		width: 33.3%;
+		font-size: 90%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		border-bottom: 1px solid #454545;
+	}
+  .about {
+    width: 95%;
+    position: relative;
+    padding-top: 2%;
+  }
+  .work img#waitroseimage {
+    position: absolute;
+    top: 245%;
+  }
+  .work ul#waitrose {
+    position: absolute;
+    top: 260%
+  }
+
+/*iPhone*/
+@media only screen and (max-width: 580px) {
+
+  nav li a {
+		width: 50%;
+		font-size: 82%;
+	}
+
+  .heading img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 24%;
+  }
+
+  .heading ul {
+    width: 100%;
+    overflow: hidden;
+    font-size: 80%;
+    left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .about {
+    width: 100%;
+    position: relative;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .work img#spartaimage {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 24%;
+  }
+  .work img#cineworldimage {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 24%;
+  }
+  .work img#waitroseimage {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 165%;
+    left: 24%;
+  }
+  .work ul#sparta {
+    width: 100%;
+    overflow: hidden;
+    font-size: 80%;
+    left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .work ul#cineworld {
+    width: 100%;
+    overflow: hidden;
+    font-size: 80%;
+    top: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .work ul#waitrose {
+    width: 100%;
+    overflow: hidden;
+    font-size: 80%;
+    top: 180%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+/*Media Queries End*/
+
+/*body h1 {
   text-align: center;
   font-size: 35px;
 }
@@ -82,10 +354,101 @@ nav li a:hover, nav li.active a {
     top: -470px;
     right: -730px;
 }
-#externallinks {
+#sml {
   position: relative;
   top: -300px;
   text-align: center;
   font-family: verdana;
   font-size: 15px;
 }
+.github {
+  position: relative;
+  top: 52px;
+  right: 260px;
+}
+#linkedin {
+  position: relative;
+  top: 100px;
+  left: -100px;
+  padding-right: 100px;
+}
+#github {
+  height: 70px;
+  width: 70px;
+}
+#stackoverflow {
+  height: 70px;
+  width: 210px;
+}
+@media only screen and (max-width: 780px) {
+	nav {
+		margin: 2% auto;
+	}
+	nav li a {
+		width: 33.3%;
+		font-size: 90%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		border-bottom: 1px solid #454545;
+	}
+	nav li:nth-child(3) a {
+		border-right: none;
+	}
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+	section {
+		width: 100%;
+	}
+
+  #cvheading {
+    /*position: relative;*/
+    /*text-align: center;
+    width: 100%;
+    top: 40px;
+  }*/
+  /*#profilePic {
+    width: 100%;
+  }*/
+  /*#cinfo {
+    width: 100%;
+  }
+  #am {
+    width: 100%;
+  }
+  #winfo {
+    width: 100%;
+  }
+  #einfo {
+    width: 100%;
+  }
+	h2 {
+		font-size: 105%;
+
+	}
+	p {
+		font-size: 95%;
+	}
+}*/
+/*@media only screen and (max-width: 580px) {
+	nav li a {
+		width: 50%;
+		font-size: 82%;
+	}
+	nav li:nth-child(even) a {
+		border-right: none;
+	}
+	nav li:nth-child(3) a {
+		border-right: 1px solid #454545;
+	}
+	h2 {
+		font-size: 95%;
+
+	}
+	p {
+		font-size: 88%;
+	}
+}*/
