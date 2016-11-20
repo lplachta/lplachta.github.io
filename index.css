@@ -98,74 +98,58 @@ h2 {
   padding-bottom: 2%;
 }
 .work {
-  width: 100%;
   position: relative;
 }
-.work img#spartaimage {
-  width: 25%;
-  height: auto;
-  left: 5%;
+.work img {
   position: relative;
-}
-.work img#cineworldimage {
-  width: 25%;
-  height: auto;
-  position: absolute;
   left: 5%;
-  top: 100%;
+  width: 50%;
+  height: auto;
   padding-top: 2%;
+  padding-bottom: 2%;
 }
-.work img#waitroseimage {
-  width: 25%;
-  height: auto;
+.work #sparta {
+  padding-bottom: 0%;
+}
+.work #cineworld {
+  padding-bottom: 18%;
+}
+.work #waitrose {
+  padding-bottom: 5%;
+}
+.work #newsquest {
+  padding-bottom: 0%;
+}
+.work #ibm {
+  padding-bottom: 3%;
+}
+.work #wgeco {
+  padding-bottom: 0%;
+}
+.work ul {
   position: absolute;
-  left: 5%;
-  top: 230%;
+  left: 57%;
+  top: 7%;
+  padding-right: 3%;
+  list-style-type: none;
 }
-.work ul#sparta {
-  right: 5%;
-  position: absolute;
-  top: 40%;
-  list-style: none;
-}
-.work ul#cineworld {
-  right: 21.5%;
-  position: absolute;
-  top: 105%;
-  list-style: none;
-}
-.work ul#cineworld li ol li {
+.work ul li ol li {
   position: relative;
-  left: 15%;
+  left: 6%
 }
-.work ul#waitrose {
-  right: 10%;
-  position: absolute;
-  top: 260%;
-  list-style: none;
-}
-
 /*Media Queries Start*/
 
 /*Reduced Size*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   .heading ul {
     position: relative;
     left: 5%;
   }
-  .work ul#sparta {
+  .work ul {
+    background: red;
     position: relative;
     left: 5%;
-  }
-  .work ul#cineworld {
-    position: absolute;
-    top: 135%;
-    left: 5%;
-  }
-  .work ul#waitrose {
-    position: absolute;
-    top: 250%;
-    left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -187,13 +171,8 @@ h2 {
     position: relative;
     padding-top: 2%;
   }
-  .work img#waitroseimage {
-    position: absolute;
-    top: 245%;
-  }
-  .work ul#waitrose {
-    position: absolute;
-    top: 260%
+  .work ul {
+    background: blue;
   }
 
 /*iPhone*/
@@ -226,50 +205,21 @@ h2 {
     padding-left: 2%;
     padding-right: 2%;
   }
-  .work img#spartaimage {
+  .work img {
     width: 50%;
     height: auto;
     position: relative;
     left: 24%;
   }
-  .work img#cineworldimage {
-    width: 50%;
-    height: auto;
-    position: relative;
-    left: 24%;
-  }
-  .work img#waitroseimage {
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 165%;
-    left: 24%;
-  }
-  .work ul#sparta {
+  .work ul {
     width: 100%;
     overflow: hidden;
     font-size: 80%;
-    left: 0;
     padding-left: 3%;
     padding-right: 3%;
+    left: 0%;
+    background: green;
   }
-  .work ul#cineworld {
-    width: 100%;
-    overflow: hidden;
-    font-size: 80%;
-    top: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  .work ul#waitrose {
-    width: 100%;
-    overflow: hidden;
-    font-size: 80%;
-    top: 180%;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
 
 /*Media Queries End*/
 
