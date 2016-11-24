@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.work {
+  position: relative;
+}
+.work img {
+  position: relative;
+  left: 5%;
+  width: 50%;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.work #sparta {
+  padding-bottom: 0%;
+}
+.work #cineworld {
+  padding-bottom: 18%;
+}
+.work #waitrose {
+  padding-bottom: 5%;
+}
+.work #newsquest {
+  padding-bottom: 0%;
+}
+.work #ibm {
+  padding-bottom: 3%;
+}
+.work #wgeco {
+  padding-bottom: 0%;
+}
+.work ul {
+  position: absolute;
+  left: 57%;
+  top: 7%;
+  padding-right: 3%;
+  list-style-type: none;
+}
+.work ul li ol li {
+  position: relative;
+  left: 6%
+}
+
+@media only screen and (max-width: 1200px) {
+  .work ul {
+    position: relative;
+    left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .work ul {
+  }
+}
+
+@media only screen and (max-width: 580px) {
+.work img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 24%;
+  }
+  .work ul {
+    width: 100%;
+    overflow: hidden;
+    font-size: 80%;
+    padding-left: 3%;
+    padding-right: 3%;
+    left: 0%;
+  }
+}
