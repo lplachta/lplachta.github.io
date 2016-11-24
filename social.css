@@ -1,0 +1,74 @@
+.social {
+    padding-bottom: 2%;
+}
+
+#socialIntro {
+  width: 100%;
+  text-align: justify;
+  position: relative;
+  padding-top: 1%;
+  padding-left: 20%;
+  padding-right: 17%;
+  padding-bottom: 1%;
+}
+#linkedin {
+  position: relative;
+  left: 25%;
+}
+#github {
+  position: relative;
+  left: 45%;
+}
+#stack {
+  position: relative;
+  left: 60%;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+@media only screen and (max-width: 780px) {
+#socialIntro {
+  width: 95%;
+  position: relative;
+  padding-top: 2%;
+  }
+#linkedin {
+  position: relative;
+  left: 15%;
+}
+#github {
+  position: relative;
+  left: 30%;
+}
+#stack {
+  position: relative;
+  left: 50%;
+}
+}
+
+
+@media only screen and (max-width: 580px) {
+
+#socialIntro {
+    width: 95%;
+    position: relative;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+#linkedin {
+  position: relative;
+  left: 5%;
+}
+#github {
+  position: relative;
+  left: 15%;
+}
+#stack {
+  position: relative;
+  left: 25%;
+}
+}
