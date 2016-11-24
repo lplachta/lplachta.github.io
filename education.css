@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+.education {
+  position: relative;
+}
+.education img {
+  position: relative;
+  left: 15%;
+  width: 30%;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.education #uwe {
+  padding-bottom: 2%;
+}
+.education img #uwe {
+
+}
+.education #staffs {
+  padding-bottom: 0%;
+}
+.education #uxbridge {
+  padding-bottom: 18%;
+}
+.education #northwood {
+  padding-bottom: 0%;
+}
+.education #newnham {
+  padding-bottom: 0%;
+}
+.education ul {
+  position: absolute;
+  left: 57%;
+  top: 7%;
+  padding-right: 3%;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+  
+@media only screen and (max-width: 780px) {
+.education ul {
+    position: relative;
+    left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .education img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 24%;
+  }
+
+  .education ul {
+    width: 100%;
+    overflow: hidden;
+    font-size: 80%;
+    padding-left: 3%;
+    padding-right: 3%;
+    left: 0%;
+  }
+}
