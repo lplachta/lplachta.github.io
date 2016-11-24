@@ -1,0 +1,55 @@
+/*NAV Start*/
+nav {
+  width: 100%;
+  margin: 1% auto;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+nav li a {
+	background: lightgrey;
+	border: 1px solid #454545;
+	color: black;
+	display: block;
+	float: left;
+	font-size: 120%;
+	font-weight: 600;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	width: 16.65%;
+	transition: background 0.5s ease;
+}
+nav li a:hover, nav li.active a {
+	background: lightblue;
+	color: #454545;
+}
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+
+  nav {
+		margin: 2% auto;
+	}
+	nav li a {
+		width: 33.3%;
+		font-size: 90%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		border-bottom: 1px solid #454545;
+	}
+@media only screen and (max-width: 580px) {
+
+  nav li a {
+		width: 50%;
+		font-size: 82%;
+	}
+
+/*NAV End*/
