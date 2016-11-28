@@ -1,11 +1,15 @@
 <html>
     <head>
         <title>Luke Plachta - CV</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="stylesheet" type="text/css" href="work.css">
-        <link rel="stylesheet" type="text/css" href="education.css">
-        <link rel="stylesheet" type="text/css" href="nav.css">
-        <link rel="stylesheet" type="text/css" href="social.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/work.css">
+        <link rel="stylesheet" type="text/css" href="css/education.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="css/social.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+        <script src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
         <!--Heading start-->
@@ -181,7 +185,7 @@
           </div>
           <div class="social" id="social">
             <h2>Social</h2>
-            <p id="socialIntro">Find me on social media pages such as Linkedin, Github and Stack Overflow</p>
+            <p id="socialIntro">Find me on social media pages such as Linkedin, Github and Stack Overflow. Please select the images below</p>
           </div>
           <div class="social">
           <a id="linkedin" href="https://www.linkedin.com/in/luke-plachta-1aa0b5122?trk=nav_responsive_tab_profile_pic"><img alt="Linkedin" src="img/linkedin.jpg"></a>
@@ -192,22 +196,19 @@
             <h2>Contact</h2>
           </div>
           <div>
-            <form id="form" method = "POST" action="http://lacedeamon.spartaglobal.com/contactform">
-            <label for = "name">name</label>
+            <form id="form" method = "POST" action=<a href="mailto:luke.plachta@googlemail.com"></a>
+            <label id="name" for = "name">name</label>
             <input type = "text" name = "name" id = "name">
             <br>
-            <label for = "email">email</label>
+            <label id ="email" for = "email">email</label>
             <input type = "text" name = "email" id = "email">
             <br>
-            <label for = "addressee">addressee</label>
-            <input type = "hidden" name = "addressee" id = "addressee">
-            <br>
-            <label for = "message">message</label>
+            <label id ="message" for = "message">message</label>
             <input type = "text" name = "message" id = "message">
             <br>
             <input type = "submit" value = "send"> 
             </form>
-            </div>
+          </div>
         </main>
     </body>
 </html>
